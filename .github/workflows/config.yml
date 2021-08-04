@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
+      - run: cd hello-world-node-package
       - run: npm install
       - run: npm publish --dry-run=true
         env:
