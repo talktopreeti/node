@@ -1,9 +1,8 @@
 name: Node.js Publish Package
 on:
   push:
-    branches: [master]
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,6 +15,9 @@ jobs:
       - run: node -v
       - run: npm install
       - run: npm publish --dry-run=true
+      - name: Publish Package to npm registry if branch is master
+        if: ${{ github.ref == 'refs/heads/master'}}
+        run: npm publish
       - run: git status
       - run: ls -al
         env:
