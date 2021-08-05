@@ -18,7 +18,7 @@ jobs:
       - name: Publish Package to npm registry if branch is master
         if: ${{ github.ref == 'refs/heads/master'}}
         run: npm publish
-      - run: git status
-      - run: ls -al
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - run: git status
+      - run: ls -al
