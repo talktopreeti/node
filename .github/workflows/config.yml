@@ -13,8 +13,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm --version
       - run: node -v
-      - run: npm install
-      - run: echo "test" > helloWorld.txt	
+      - run: npm install	
       - run: git status
       - run: ls -al
       - run: npm publish --dry-run=true
