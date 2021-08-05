@@ -1,0 +1,27 @@
+{
+  "name": "hello-world-node-pkg",
+  "version": "2.0.0",
+  "description": "Hello World",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/talktopreeti/node.git"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "^9.0.3"
+  },
+  "keywords": [
+    "Hello",
+    "World"
+  ],
+  "author": "Preeti Misra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talktopreeti/node/issues"
+  },
+  "homepage": "https://github.com/talktopreeti/node#readme"
+}
