@@ -17,5 +17,6 @@ jobs:
       - run: npm install
       - run: npm publish --dry-run=true
       - run: git status
+      - run: ls -al
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
