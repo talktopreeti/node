@@ -2,7 +2,7 @@ name: Node.js Publish Package
 on:
   push:
    tags-ignore:
-    - '**'
+    - '*.*'
 jobs:
   publish:
     runs-on: ubuntu-latest
