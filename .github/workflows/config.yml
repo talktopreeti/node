@@ -16,7 +16,7 @@ jobs:
       - run: npm install	
       - run: git status
       - run: ls -al
-      - run: npm publish --dry-run=true
+      - run: npm publish --dry-run=true # testing
       - name: Publish Package to npm registry if branch is master
         if: ${{ github.ref == 'refs/heads/master'}}
         run: npm publish
